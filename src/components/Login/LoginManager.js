@@ -16,15 +16,11 @@ export const handleGoogleSignIn = () => {
         .signInWithPopup(googleProvider)
         .then((result) => {
             const credential = result.credential;
-            const token = credential.accessToken;
             const user = result.user;
             return user;
         }).catch((error) => {
             // Handle Errors here.
-            const errorCode = error.code;
-            const errorMessage = error.message;
-            const email = error.email;
-            const credential = error.credential;
+
         });
 }
 
@@ -39,10 +35,7 @@ export const handleFacebookSignIn = () => {
             return user;
         })
         .catch((error) => {
-            const errorCode = error.code;
-            const errorMessage = error.message;
-            const email = error.email;
-            const credential = error.credential;
+        
             
         });
 }
@@ -72,7 +65,7 @@ export const createUserWithEmailAndPassword = (name, email, password) => {
             return newUserInfo;
         })
         .catch((error) => {
-            const errorCode = error.code;
+           
             const errorMessage = error.message;
             const newUserInfo = {};
             newUserInfo.error = errorMessage;
@@ -93,7 +86,7 @@ export const signInWithEmailAndPassword = (email, password) => {
             return newUserInfo;
         })
         .catch((error) => {
-            const errorCode = error.code;
+            
             const errorMessage = error.message;
             const newUserInfo = {};
             newUserInfo.error = errorMessage;

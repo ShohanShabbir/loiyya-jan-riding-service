@@ -9,11 +9,11 @@ import { UserContext } from '../../App';
 import Maps from '../Maps/Maps';
 
 const Destination = () => {
-    const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+    const [loggedInUser] = useContext(UserContext);
     const { rideName } = useParams();
 
     const arr = rideList.filter(ride => ride.name === rideName);
-    const { register, handleSubmit, watch, errors } = useForm();
+    const { register, handleSubmit, errors } = useForm();
     const [rideInfo, setRideInfo] = useState({});
     const onSubmit = data => setRideInfo(data);
 

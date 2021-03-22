@@ -17,11 +17,11 @@ const Login = () => {
         email: '',
         photo: ''
     });
-    const [errorMessage, setErrorMessage] = useState("")
+   
     const history = useHistory();
     const location = useLocation();
     const { from } = location.state || { from: { pathname: "/" } };
-    const { register, handleSubmit, watch, errors } = useForm();
+    const { register, handleSubmit, errors } = useForm();
     // Initialize Firebase app
     initializeLoginFramework();
 
@@ -87,7 +87,7 @@ const Login = () => {
                 <form className="loginForm" onSubmit={handleSubmit(onSubmit)}>
                     {newUser && <input type="text" className="userInput form-control" name="name" placeholder="Your Name" onBlur={handleBlur} id="inputName" ref={register({
                         required: true, pattern: {
-                            value: /^[a-zA-Z\s\.]*$/,
+                            value: /^[a-zA-Z\s.]*$/,
                             message: "*Please Provide a valid name"
                         },
                     })} />}

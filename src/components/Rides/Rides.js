@@ -3,7 +3,7 @@ import { useHistory } from 'react-router';
 import { UserContext } from '../../App';
 
 const Rides = (props) => {
-    const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+   
     const {name, picture} = props.ride
     const history = useHistory();
     const handleClick = (rideName) => {

@@ -7,7 +7,7 @@ import Rides from '../Rides/Rides';
 import Header from '../Header/Header';
 import { UserContext } from '../../App';
 const Home = () => {
-    const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+    
    
     return (
         <div className="home-background">

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { UserContext } from '../../App';
 import firebase from "firebase/app";
 import "firebase/auth";
-import firebaseConfig from "../../components/Login/firebase.config";
+
 
 const Header = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
