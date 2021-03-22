@@ -15,7 +15,6 @@ export const handleGoogleSignIn = () => {
     return firebase.auth()
         .signInWithPopup(googleProvider)
         .then((result) => {
-            const credential = result.credential;
             const user = result.user;
             return user;
         }).catch((error) => {
@@ -31,7 +30,6 @@ export const handleFacebookSignIn = () => {
         .then((result) => {
             const credential = result.credential;
             const user = result.user;
-            const accessToken = credential.accessToken;
             return user;
         })
         .catch((error) => {

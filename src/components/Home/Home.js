@@ -1,11 +1,9 @@
 
-import React, { useContext, useState } from 'react';
 
 import './Home.css'
 import rideList from '../../data/data.json'
 import Rides from '../Rides/Rides';
 import Header from '../Header/Header';
-import { UserContext } from '../../App';
 const Home = () => {
     
    

@@ -1,6 +1,6 @@
-import React, { useContext } from 'react';
+
 import { useHistory } from 'react-router';
-import { UserContext } from '../../App';
+
 
 const Rides = (props) => {
    
