@@ -1,9 +1,9 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyCVlRTgxg6kJfw1XEGR5TD_IN0x8WTeglA",
-    authDomain: "loiyya-jan.firebaseapp.com",
-    projectId: "loiyya-jan",
-    storageBucket: "loiyya-jan.appspot.com",
-    messagingSenderId: "973968922343",
-    appId: "1:973968922343:web:ef1657f862ddadb5473442"
-  };
+  apiKey: "AIzaSyCArbiRqpEeh36mKLHCljQT-HcYLoMBiM4",
+  authDomain: "shoe-shop-46e79.firebaseapp.com",
+  projectId: "shoe-shop-46e79",
+  storageBucket: "shoe-shop-46e79.appspot.com",
+  messagingSenderId: "757366194618",
+  appId: "1:757366194618:web:72a6c5c5bb30f829c4dd83"
+};
 export default firebaseConfig;

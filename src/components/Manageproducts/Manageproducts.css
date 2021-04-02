@@ -1,0 +1,16 @@
+.product{
+    font-family: Poppins;
+}
+
+.card-body button{
+      
+    margin-left: 5px;
+}
+
+.product-btn{
+
+    padding: 10px 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    border-radius: 10px;
+}

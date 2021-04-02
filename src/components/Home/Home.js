@@ -1,19 +1,31 @@
 
 
 import './Home.css'
-import rideList from '../../data/data.json'
-import Rides from '../Rides/Rides';
+
+import Products from '../Products/Products';
 import Header from '../Header/Header';
+import { useState } from 'react';
+import { useEffect } from 'react';
 const Home = () => {
+
+
+    const [sneakers, setSneakers] = useState([]);
+
+
+    useEffect(() =>{
+        fetch('http://localhost:5055/sneakers')
+        .then(response => response.json())
+        .then(data => setSneakers(data))
+    }, [])
     
    
     return (
         <div className="home-background">
             <div className="container">
             <Header></Header>
-                <div className="row rides">
+                <div className="row Products">
                     {
-                        rideList.map(ride => <Rides key={ride.rideNumber} ride={ride}></Rides>)
+                        sneakers.map(sneakers => <Products  sneakers={sneakers}></Products>)
                     }
                 </div>
 

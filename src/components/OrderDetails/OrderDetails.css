@@ -1,0 +1,6 @@
+.order-card{
+    font-family: Poppins;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+}

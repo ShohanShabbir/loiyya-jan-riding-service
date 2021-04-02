@@ -70,16 +70,10 @@ const Login = () => {
             })
     }
 
-    // Handle Facebook Sign in
-    const facebookSignIn = () => {
-        handleFacebookSignIn()
-            .then(res => {
-                handleResponse(res, true);
-            })
-    }
+
     
     return (
-        <div className="container">
+        <div className="container login">
             <Header></Header>
             <div className="text-center formCard">
                 <h3>{newUser ? "Register For Signing In" : "Sign In"}</h3>
@@ -141,9 +135,9 @@ const Login = () => {
                 </div>
                 
                 <div className="externalButtons">
-                    <button className="btn btn-warning text-white" onClick={googleSignIn}>  Google Sign In</button>
+                    <button className="btn btn-danger text-white" onClick={googleSignIn}>  Google Sign In</button>
 
-                    <button className="btn btn-primary" onClick={facebookSignIn}>  Facebook Sign In</button>
+                    
                 </div>
             </div>
         </div>
